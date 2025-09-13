@@ -1,18 +1,19 @@
-
 * {
-     font-family: 'Century Gothic', sans-serif  ;
+    font-family: 'Century Gothic', sans-serif;
 }
 
 body {
     background-color: black;
+
     margin-top: 20px;
 }
 
 input {
     padding: 1px 5px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
     width: 280px;
     height: 28px;
+
     border-radius: 5px;
 }
 
@@ -26,14 +27,15 @@ input[type=number]:focus {
 button {
     background-color: rgb(38, 119, 218);
     color: white;
+    font-size: 20px;
+    font-weight: 500;
+
     margin: 2.5px;
     margin-bottom: 32px;
     padding: 12px 30px;
+
     border: 0;
     border-radius: 2.5px;
-    
-    font-size: 20px;
-    font-weight: 500;
 }
 
 button:hover {
@@ -41,32 +43,45 @@ button:hover {
 }
 
 .container {
-    margin: auto;
     background-color: rgb(217, 212, 212);
-    width: 600px;
     text-align: center;
-    border-radius: 5px;
+
+    margin: auto;
+    width: 900px;
     padding: 30px 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border-radius: 5px;
 }
 
 .calc {
     border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-end-end-radius: 0px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    margin: auto;
-    width: 60%;
+
+    width: 400px;
     height: auto;
+
     background-color: white;
 }
 
-.calc-title {
+.calc-title,
+.history-title {
     padding: 32px;
+
     font-weight: 800;
     font-size: 24px;
+    text-align: center;
 }
 
 .operations {
     display: flex;
     flex-direction: column;
+
     margin: auto;
     width: 70%;
     align-items: center;
@@ -74,4 +89,23 @@ button:hover {
 
 .buttons {
     display: flex;
+}
+
+.history {
+    background-color: black;
+    color: white;
+
+    width: 400px;
+    text-align: right;
+    padding-right: 20px;
+
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-end-start-radius: 0px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+.last-operations {
+    padding: 2px;
 }

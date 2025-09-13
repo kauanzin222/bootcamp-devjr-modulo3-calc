@@ -14,7 +14,11 @@ function calc(op){
 
     document.getElementById("result").value = result;
 
-    var newHistory = '<div>' + num1 + " " + op + " " + num2 + " " + "= " + result + '</div>';
-    document.getElementById("history").innerHTML = newHistory + document.getElementById("history").innerHTML 
+    var newHistory = '<div class="last operations">' + num1 + " " + op + " " + num2 + " " + "= " + result + '</div>';
+    var history    = document.getElementById("history"); 
+    
+    history.innerHTML = newHistory + history.innerHTML;
 
+    if (history.children.length > 10)
+        history.removeChild(history.childNodes[10]);
 }
