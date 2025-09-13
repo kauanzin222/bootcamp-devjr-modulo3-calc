@@ -15,7 +15,14 @@
             <div class="operations">
                 <input id="num1" type="number">
                 <input id="num2" type="number">
-                <button onclick="calc()">Somar</button>
+
+                <div class="buttons">
+                    <button onclick="calc('soma')">+</button>
+                    <button onclick="calc('sub')">-</button>
+                    <button onclick="calc('mult')">*</button>
+                    <button onclick="calc('div')">/</button>
+                </div>
+                
                 <input id="result" type="text" readonly value="0.0">
             </div>
         </div>
