@@ -10,6 +10,7 @@
     <div class="container">
         <div class="calc">
             <div class="calc-title">
+                <object data="calc.svg" type="image/svg+xml"></object><br>
                 Calculadora Básica
             </div>
             <div class="operations">
@@ -17,14 +18,18 @@
                 <input id="num2" type="number">
 
                 <div class="buttons">
-                    <button onclick="calc('soma')">+</button>
-                    <button onclick="calc('sub')">-</button>
-                    <button onclick="calc('mult')">*</button>
-                    <button onclick="calc('div')">/</button>
+                    <button onclick="calc('+')">+</button>
+                    <button onclick="calc('-')">-</button>
+                    <button onclick="calc('*')">*</button>
+                    <button onclick="calc('/')">/</button>
                 </div>
                 
-                <input id="result" type="text" readonly value="0.0">
+                <input id="result" type="text" readonly>
             </div>
+            <div id="history" class="history">
+
+            </div>
+        
         </div>
     </div>
 
